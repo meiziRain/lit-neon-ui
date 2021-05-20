@@ -1,6 +1,6 @@
 {
   "name": "lit-neon-ui",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "dist/lit-neon-ui.es.js",
   "exports": {
     ".": "./dist/lit-neon-ui.es.js"
@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
     "lit": "latest"
