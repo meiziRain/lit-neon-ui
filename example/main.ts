@@ -1,0 +1,1 @@
+// import MyElement from '../src/index'
