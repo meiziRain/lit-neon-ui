@@ -1,6 +1,6 @@
 {
   "name": "lit-neon-ui",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "./dist/lit-neon-ui.es.js",
   "module": "./dist/lit-neon-ui.es.js",
   "exports": {
