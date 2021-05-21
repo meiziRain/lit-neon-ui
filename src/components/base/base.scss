@@ -1,3 +1,5 @@
+@import "../../assets/fonts/fonts.css";
+
 :root {
   --neon-background-light: #fff;
   --neon-color-text-light: #0c0f13;
@@ -7,9 +9,12 @@
   --neon-color-text-dark: #fff;
   --neon-color-text-el-drak-bg:#fff;
   --neon-color-text-el-light-bg:#0c0f13;
+  //
   --neon-main-primary-color: black;
   --neon-color-link-hover: #fff;
   --neon-cursor-color: white;
+  //
+  --neon-border-radius: .5em;
 }
 
 @mixin color-scheme-light {
@@ -51,4 +56,14 @@
 
 [neon-color-scheme="dark"] {
   @include color-scheme-dark;
+}
+
+.disabled {
+  opacity: 0.8;
+  filter: grayscale(0.7);
+  cursor: not-allowed;
+}
+
+.round {
+  border-radius: var(--neon-border-radius);
 }

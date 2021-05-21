@@ -9,14 +9,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite + Lit-Element App</title>
   <script type="module" src="./src/index.ts"></script>
+  <style>
+    body {
+      background-color: var(--neon-background-color);
+    }
+  </style>
 </head>
 
-<body>
+<body neon-color-scheme="light">
+  <script>
+    function toggle() {
+      document.body.getAttribute("neon-color-scheme") === "dark" ? document.body.setAttribute("neon-color-scheme", "light") : document.body.setAttribute("neon-color-scheme", "dark")
+    }
+  </script>
+  <button onclick="toggle()">toggle</button>
   <my-element>
     <p>This is child content</p>
   </my-element>
 
-  <neon-button>125423553</neon-button>
+  <neon-button round disabled>Meizi</neon-button>
+  <neon-button typo="primary">MEIZI</neon-button>
 </body>
 
 </html>
