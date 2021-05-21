@@ -18,7 +18,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "deploy": "npm run build && git add . && git commit -m 'deploy' && npm version patch && npm publish && git push github master && git push gitee master"
+    "publish": "npm run build && npm version patch && npm publish",
+    "git": "npm run build && git add . && git commit -m 'deploy' && git push github master && git push gitee master"
   },
   "dependencies": {
     "lit": "latest"
