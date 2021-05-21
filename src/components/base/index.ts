@@ -1,5 +1,5 @@
 import { LitElement } from 'lit'
-import style from './base.scss'
+import style from './base.module.scss'
 /**
  * Base element.
  *
