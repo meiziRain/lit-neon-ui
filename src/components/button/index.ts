@@ -1,6 +1,7 @@
 import { html, css } from 'lit'
 import { customElement, property, } from 'lit/decorators.js'
 import { BaseNeonElement } from "../base"
+import el from '../base/el.scss'
 
 /**
  * neon style button.
@@ -11,6 +12,7 @@ import { BaseNeonElement } from "../base"
 @customElement('neon-button')
 export class NeonButton extends BaseNeonElement {
   static styles = [
+    el,
     css`
       button {
         display: inline-block;
@@ -45,6 +47,7 @@ export class NeonButton extends BaseNeonElement {
       }
     `
   ]
+
   /**
    * 按钮是否禁用
    */
