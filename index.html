@@ -13,22 +13,32 @@
     body {
       background-color: var(--neon-background-color);
     }
+
+    neon-card {
+
+    }
   </style>
 </head>
 
-<body neon-color-scheme="light">
-  <script>
-    function toggle() {
-      document.body.getAttribute("neon-color-scheme") === "dark" ? document.body.setAttribute("neon-color-scheme", "light") : document.body.setAttribute("neon-color-scheme", "dark")
-    }
-  </script>
+<body neon-color-scheme="dark">
   <button onclick="toggle()">toggle</button>
   <my-element>
     <p>This is child content</p>
   </my-element>
 
-  <neon-button round disabled>Meizi</neon-button>
+  <neon-button border round disabled>Meizi</neon-button>
   <neon-button typo="primary">MEIZI</neon-button>
+  <neon-button size="large" typo="primary">MEIZI</neon-button>
+  <neon-card flicker>
+    <div style="padding: 20px;">
+      123
+    </div>
+  </neon-card>
+  <script>
+    function toggle() {
+      document.body.getAttribute("neon-color-scheme") === "dark" ? document.body.setAttribute("neon-color-scheme", "light") : document.body.setAttribute("neon-color-scheme", "dark")
+    }
+  </script>
 </body>
 
 </html>

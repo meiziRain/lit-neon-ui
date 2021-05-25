@@ -7,8 +7,8 @@ import {customElement, property } from 'lit/decorators.js';
  * @slot - This element has a slot
  * @csspart button - The button
  */
-@customElement('neon-button')
-export default class neonButton extends LitElement {
+@customElement('neon-input')
+export default class NeonInput extends LitElement {
   static styles = [css`
     :host {
       padding: 22px;

@@ -21,7 +21,8 @@
     "pub": "npm run build && git add . && git commit -m deploy && git push github master && git push gitee master && npm version patch && npm publish"
   },
   "dependencies": {
-    "lit": "latest"
+    "lit": "latest",
+    "mitt": "^2.1.0"
   },
   "devDependencies": {
     "rollup-plugin-postcss-lit": "^1.0.1",

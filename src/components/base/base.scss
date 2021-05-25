@@ -1,20 +1,19 @@
 @import "../../assets/fonts/fonts.css";
-
 :root {
   --neon-background-light: #fff;
   --neon-color-text-light: #0c0f13;
-  --neon-color-light-primary:black;
-  --neon-color-dark-primary:white;
+  --neon-color-light-primary: black;
+  --neon-color-dark-primary: white;
   --neon-background-dark: #0c0f13;
   --neon-color-text-dark: #fff;
-  --neon-color-text-el-drak-bg:#fff;
-  --neon-color-text-el-light-bg:#0c0f13;
+  --neon-color-text-el-drak-bg: #fff;
+  --neon-color-text-el-light-bg: #0c0f13;
   //
   --neon-main-primary-color: black;
   --neon-color-link-hover: #fff;
   --neon-cursor-color: white;
   //
-  --neon-border-radius: .5em;
+  --neon-border-radius: 0.5em;
 }
 
 @mixin color-scheme-light {
@@ -56,4 +55,5 @@
 
 [neon-color-scheme="dark"] {
   @include color-scheme-dark;
+
 }
