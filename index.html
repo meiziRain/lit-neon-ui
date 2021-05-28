@@ -15,13 +15,18 @@
     }
 
     neon-card {
+      border-color: red;
+    }
 
+    neon-card::part(card) {
+      border-color: red;
     }
   </style>
 </head>
 
 <body neon-color-scheme="dark">
   <button onclick="toggle()">toggle</button>
+  <button onclick="openDialog()">Open dialog</button>
   <my-element>
     <p>This is child content</p>
   </my-element>
@@ -29,14 +34,27 @@
   <neon-button border round disabled>Meizi</neon-button>
   <neon-button typo="primary">MEIZI</neon-button>
   <neon-button size="large" typo="primary">MEIZI</neon-button>
-  <neon-card flicker>
+  <!-- <neon-card round>
     <div style="padding: 20px;">
       123
     </div>
-  </neon-card>
+  </neon-card> -->
+  <neon-dialog neon-dialog-close="toggle()">
+    123
+    <div slot="footer">
+      <neon-button disabled>Meizi</neon-button>
+      <neon-button typo="primary">MEIZI</neon-button>
+    </div>
+  </neon-dialog>
   <script>
+    // document.querySelector('neon-dialog').addEventListener("neon-dialog-close", function () {
+    //   alert("你触发了自定义事件！");
+    // }, false)
     function toggle() {
       document.body.getAttribute("neon-color-scheme") === "dark" ? document.body.setAttribute("neon-color-scheme", "light") : document.body.setAttribute("neon-color-scheme", "dark")
+    }
+    function openDialog() {
+      document.querySelector('neon-dialog').toggleAttribute('open')
     }
   </script>
 </body>

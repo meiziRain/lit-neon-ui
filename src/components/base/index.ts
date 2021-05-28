@@ -1,8 +1,8 @@
 import { css, LitElement } from 'lit'
 import style from './base.scss'
-
+import fontAwesomeCss from '../../assets/icon-font/fontawesome-free-5.15.3-web/css/all.css'
+export { fontAwesomeCss }
 export const BaseCSS = css`
-
   * {
     border: none;
   }
@@ -26,8 +26,8 @@ export const BaseCSS = css`
  * Base element.
  *
  */
-export abstract class BaseNeonElement extends LitElement {  
+export abstract class BaseNeonElement extends LitElement {
   static styles = [
-    style
+    style,
   ]
 }
