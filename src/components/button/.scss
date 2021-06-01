@@ -1,6 +1,9 @@
 :host {
+    display: inline-block;
+    & ::selection {
+        color: #d94f5c;
+    }
     button {
-        display: inline-block;
         line-height: 1;
         font-size: 16px;
         white-space: nowrap;

@@ -2,7 +2,6 @@ import { html, css, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { BaseCSS, BaseNeonElement, fontAwesomeCss } from '../base';
 import _css from './.scss'
-// import { NeonCard } from '../card'
 /**
  * An example element.
  *
@@ -50,10 +49,9 @@ export class NeonDialog extends BaseNeonElement {
             </div>
         `
     }
-    private _close() {
-        let close = new Event('neon-dialog-close');
-        console.log(close)
-        console.log(this)
-        this.dispatchEvent(close);
+    private _close(event: Event) {
+        // let close = new Event('neon-dialog-close');
+        // this.dispatchEvent(close);
+        this.fire('before-close', { sourceEvent: event })
     }
 }

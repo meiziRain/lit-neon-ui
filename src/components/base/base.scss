@@ -21,12 +21,15 @@
   --neon-text-color: var(--neon-color-text-light);
   --neon-el-text-color: var(--neon-color-text-el-drak-bg);
   --neon-background-color: var(--neon-background-light);
-  --neon-border-color: var(--neon-border-light);
   --neon-el-primary-color: var(--neon-color-light-primary);
   --neon-logo-weight: 300;
   --neon-red-shadow: none;
   --neon-blue-shadow: none;
   --neon-green-shadow: none;
+
+
+  --neon-border-blue: none;
+  --neon-card-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
 }
 
 @mixin color-scheme-dark {
@@ -34,13 +37,16 @@
   --neon-text-color: var(--neon-color-text-dark);
   --neon-el-text-color: var(--neon-color-text-el-light-bg);
   --neon-background-color: var(--neon-background-dark);
-  --neon-border-color: var(--neon-border-dark);
   --neon-el-primary-color: var(--neon-color-dark-primary);
+
+  --neon-border-blue: 2px solid blue;
 
   --neon-logo-weight: 600;
   --neon-red-shadow: 0 0 80px red, 0 0 30px firebrick, 0 0 6px darkred;
   --neon-blue-shadow: 0 0 80px blue, 0 0 30px darkblue, 0 0 6px darkblue;
   --neon-green-shadow: 0 0 80px green, 0 0 30px rgb(1, 126, 1), 0 0 6px darkgreen;
+
+  --neon-card-shadow: 0 0 20px rgba(97, 198, 180, 0.5), inset 0 0 20px rgba(97, 198, 180, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,20 @@
+:host {
+    display: block;
+}
+#card {
+    color: var(--neon-text-color);
+    background-color: var(--neon-background-color);
+    padding: 20px;
+    height: 100%;
+    transition: all .5s linear;
+}
+.card-dark {
+    border: 8px double #61C6B4;
+}
+.card-dark:hover {
+    box-shadow: var(--neon-card-shadow);
+}
+.card-light {
+    border: none;
+    box-shadow: var(--neon-card-shadow);
+}
