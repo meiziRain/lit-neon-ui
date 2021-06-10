@@ -27,10 +27,15 @@ export class NeonDialog extends BaseNeonElement {
      */
     @property({ type: Boolean, reflect: true }) center = false
 
+
+    /**
+     * 对话框宽度
+     */
+    @property({ type: String }) width = '700px'
     render() {
         return html`
             <div id="dialog-container" ?center="${this.center}">
-                <div id="dialog-wrapper">
+                <div id="dialog-wrapper" style="width: ${this.width}">
                     <neon-card round>
                         <div id="header">
                             <div id="title">

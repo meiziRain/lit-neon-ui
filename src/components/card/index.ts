@@ -1,6 +1,6 @@
 import { html, css, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js'
-import { MODE, ModeEnum, emitter } from '../../global';
+import { NeonUI } from '../../global'
 import { BaseNeonElement, BaseCSS } from "../base"
 import _css from './.scss'
 /**
@@ -26,8 +26,8 @@ export class NeonCard extends BaseNeonElement {
 
     updated() {
         const el = this.renderRoot.querySelector('#card')
-        emitter.on('onInit', () => {
-            if (MODE === ModeEnum.dark) {
+        NeonUI.emitter.on('onInit', () => {
+            if (NeonUI.MODE === NeonUI.ModeEnum.dark) {
                 el?.classList.add('card-dark')
                 el?.classList.remove('card-light')
             }

@@ -1,5 +1,4 @@
 :host {
-    width: 480px;
     display: inline-block;
     input {
         -webkit-appearance: none;
@@ -38,7 +37,7 @@
         transform: translateY(-50%);
         text-align: center;
         color: #c0c4cc;
-        transition: all 0.3s;
+        transition: all 0.5s;
         pointer-events: none;
         visibility: hidden;
     }

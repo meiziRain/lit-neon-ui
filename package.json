@@ -12,7 +12,8 @@
   "types": "typescript/index.d.ts",
   "files": [
     "dist",
-    "typescript"
+    "typescript",
+    "@types/*.d.ts"
   ],
   "scripts": {
     "dev": "vite",
