@@ -27,9 +27,13 @@
   --neon-blue-shadow: none;
   --neon-green-shadow: none;
 
-
   --neon-border-blue: none;
-  --neon-card-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+  --neon-toast-border: 2px double black;
+
+  // toast
+  --neon-toast-border-blue: none;
+  --neon-toast-border-green: none;
+  --neon-toast-border-red: none;
 }
 
 @mixin color-scheme-dark {
@@ -39,7 +43,7 @@
   --neon-background-color: var(--neon-background-dark);
   --neon-el-primary-color: var(--neon-color-dark-primary);
 
-  --neon-border-blue: 2px solid blue;
+  --neon-border-blue: 2px double blue;
 
   --neon-logo-weight: 600;
   --neon-red-shadow: 0 0 80px red, 0 0 30px firebrick, 0 0 6px darkred;
@@ -47,6 +51,11 @@
   --neon-green-shadow: 0 0 80px green, 0 0 30px rgb(1, 126, 1), 0 0 6px darkgreen;
 
   --neon-card-shadow: 0 0 20px rgba(97, 198, 180, 0.5), inset 0 0 20px rgba(97, 198, 180, 0.5);
+
+  // toast
+  --neon-toast-border-blue: 2px double blue;
+  --neon-toast-border-green: 2px double green;
+  --neon-toast-border-red: 2px double red;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,5 +70,4 @@
 
 [neon-color-scheme="dark"] {
   @include color-scheme-dark;
-
 }

@@ -36,13 +36,13 @@ export class NeonCard extends BaseNeonElement {
                 el?.classList.remove('card-dark')
             }
         })
-        // if (MODE === ModeEnum.dark) {
-        //     el?.classList.add('card-dark')
-        //     el?.classList.remove('card-light')
-        // }
-        // else {
-        //     el?.classList.add('card-light')
-        //     el?.classList.remove('card-dark')
-        // }
+        if (NeonUI.MODE === NeonUI.ModeEnum.dark) {
+            el?.classList.add('card-dark')
+            el?.classList.remove('card-light')
+        }
+        else {
+            el?.classList.add('card-light')
+            el?.classList.remove('card-dark')
+        }
     }
 }

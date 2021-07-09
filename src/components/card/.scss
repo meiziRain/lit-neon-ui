@@ -11,9 +11,11 @@
 .card-dark {
     border: 8px double #61C6B4;
 }
+
 .card-dark:hover {
     box-shadow: var(--neon-card-shadow);
 }
+
 .card-light {
     border: none;
     box-shadow: var(--neon-card-shadow);

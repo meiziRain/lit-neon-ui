@@ -17,8 +17,8 @@ export class NeonToast extends BaseNeonElement {
 
   render() {
     return html`
-        <div role="alert" class="neon-toast neon-toast--info" style="z-index: 2013;">
-          <i class="neon-toast__icon el-icon-info"></i>
+        <div role="alert" class="neon-toast" style="z-index: 2013;">
+          <i class="neon-toast-icon"></i>
           <slot></slot>
         </div>
       `

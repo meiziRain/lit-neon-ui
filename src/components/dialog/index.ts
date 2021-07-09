@@ -55,8 +55,6 @@ export class NeonDialog extends BaseNeonElement {
         `
     }
     private _close(event: Event) {
-        // let close = new Event('neon-dialog-close');
-        // this.dispatchEvent(close);
         this.fire('before-close', { sourceEvent: event })
     }
 }
